@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 
 const apiVersion = "/api/v1";
 
-app.get(`${apiVersion}/api/test`, (req, res) => {
+app.get(`${apiVersion}/test`, (req, res) => {
   res.json({ message: "API is working", version: apiVersion });
 });
 

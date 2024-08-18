@@ -13,9 +13,8 @@ dbconnect().then(() => {
 
     app.listen(PORT, () => {
       console.log(`Server is running on port ${PORT}`);
-      console.log(`Press Ctrl+C to stop the server`);
     });
   } catch (error) {
-    console.log("Error conencting to mongodb !!", error);
+    console.log("Error connecting to mongodb !!", error);
   }
 });
